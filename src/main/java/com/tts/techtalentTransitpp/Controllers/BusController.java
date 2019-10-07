@@ -17,7 +17,7 @@ public class BusController {
 	@Autowired
 	private IbusService ibusService;
 	
-	@GetMapping("/buses")
+	@GetMapping
 	public String getBusesPage(Model model ,BusRequest busRequest){
 		model.addAttribute("request",busRequest);
 		return "index";
